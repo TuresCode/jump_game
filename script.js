@@ -45,13 +45,13 @@ var startScreen = document.querySelector('.start-screen');
     });
 
     gameContainer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
       if (!gameStarted && gameOverScreen.style.display === 'none') {
         startGame();
-      }
-      if (gameStarted && !isJumping) {
+      } else if (gameStarted && !isJumping) {
         jump();
       }
-    });
+    }, { passive: false });
 
     function startGame() {
       if (!playerName) {
