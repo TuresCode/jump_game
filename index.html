@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Jump Game</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="start-screen">
+        <h1>Jump Game</h1>
+        <div id="nameInputContainer">
+          <label for="playerName">Player Name:</label>
+          <input type="text" id="playerName" placeholder="Enter your name">
+        </div>
+        <p class="start-text">Tap or Press Space to start the game</p>
+        <h2>Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+        <button id="resetButton">Reset Leaderboard</button>
+      </div>
+      <p class="jump-text" style="display: none;">Tap or Press Space to jump</p>
+      <div class="game-container" style="display: none;">
+        <div class="score">Score: <span id="scoreValue">0</span></div>
+        <div class="character"></div>
+      </div>
+      <div class="game-over" style="display: none;">
+        <h1>Game Over</h1>
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
